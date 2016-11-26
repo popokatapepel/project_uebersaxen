@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_e095d9ebbb26b303c1a1f8cd84f7f29c721b0d2e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4f5a37ae57c5638261e8491417b1e81c6641343e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b8f091f349f1c2bf38401bae4c44a8bf1f5dfaf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="237def90e2cf0267ce1035a3ee5325413a8582b6">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a58858ea6e075baa8151076c446cbb365256acac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_df1fedc8596493ae2e7cbbee070a36f37f32a37f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_b791df95ada6fed287516a2ac808257061feac85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_e564ed8a6d00f71a87ccdca6d23f2955d076b4eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_1aba039cd12a49ff1c7112561e96aaeaaa410b49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_592fb24ef14da265600f9bd690b61a8b398cafb0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_218fc3eef9c87223032c033fd877204e2fb2cdb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cb9dc2cc240e2f986ad247cd977ce8cdb147b446">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cfe4c9ff371652a32f42691a478f3204080fdb10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_fa6ae2e41b76993d9a1c75399a8f685ce4df37e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_3d608c994f176c7e4a90a9691bbd562302132110/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f65fa4ac56f3c4a30a6d4c31adf88309238b31c8">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b205e9b051549934f9fd641d5829ea8a2d56b730/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_0b5915ada2fbdb598da6925c4ec870432a603bf4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_a627aafef77399d68b5cc3b42eacd617fdbaf8e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_a0ed50b117efa25d3db862f2c69629fc918b0d56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_fd6f81cd96e105707a52f284cf3e04df9b9ea2d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d00e4d75c8258ad7791687d2a331a851322a6d1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_e915eccd85d02b9fba1de1d2a0c7d4a89a09aec2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_40e964dd7b08743c7d69bda14d076ad5680bb255/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_7c1515cf4d8aec074d53e51ef69b54c3ee439aee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_e91173cf785b60f358cf889e717e902a11a47c66/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_08bc4448193dc8ff4069647837ad58cedaf37ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_06bb412241c7bf5a69cee68c8c7de330ce17549b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_06ea0d1b64cc84e3f1a200113efcfe5bd02c5c11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9d58384fe825c1b612a9f2dad48e9611a7059c46">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_db3a517d9b0fe08a9abc91e52cedd512ccf767e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_7ed043568477d02d8677278b91a098c114f74241/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_78627d942998c18316fc655d84c0f7c169b471ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_d2a4116dfe6aec35b3c105a6bcd9f3a8bd7a230c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/heregpsloc/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/janniklas/code/github/heregpsloc/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_ea4880e5c28ee5bb36d8fa7a807e9fea1ed75fbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_dd4a6ad7f91a5425c11dc4dd6599b03be0ed123a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_fec002f6927b45f4fa28813cab5cad308eee400c/classes.dex" />
+    </item>
+
+</items>
