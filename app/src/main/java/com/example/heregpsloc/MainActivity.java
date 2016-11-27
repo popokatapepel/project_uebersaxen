@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private RadioButton radio0;
     private RadioButton radio1;
     private Button checkBoxRefresh;
+    private Button ButtonRecord;
     private int refreshCounter;
     private TextView textCounter;
     private TextView textView;
@@ -88,7 +89,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         radio0 = (RadioButton) findViewById(R.id.radio0);
         radio1 = (RadioButton) findViewById(R.id.radio1);
         checkBoxRefresh = (Button) findViewById(R.id.checkBox2);
-        textCounter = (TextView) findViewById(R.id.textView2);
+        ButtonRecord=(Button) findViewById(R.id.button1);
+        //textCounter = (TextView) findViewById(R.id.textView2);
         textView = (TextView) findViewById(R.id.textView1);
 
         checkBox.setOnClickListener(this);
@@ -136,6 +138,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             clickCheckBoxRefresh();
         else
             setButtonState(); // for radio buttons
+    }
+
+    //eventhandler onclick start record
+    public void startrec(View view)
+    {
+        Intent intent = new Intent(this, recorder.class);
+        startActivity(intent);
     }
 
     private void clickCheckBoxRefresh() {
