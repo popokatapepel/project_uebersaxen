@@ -24,7 +24,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     private LocationManager locationManager;
-    private CheckBox checkBox;
+    private Button checkBox;
     private RadioButton radio0;
     private RadioButton radio1;
     private Button checkBoxRefresh;
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         setContentView(R.layout.activity_main);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        checkBox = (CheckBox) findViewById(R.id.checkBox1);
+        checkBox = (Button) findViewById(R.id.checkBox1);
         radio0 = (RadioButton) findViewById(R.id.radio0);
         radio1 = (RadioButton) findViewById(R.id.radio1);
         checkBoxRefresh = (Button) findViewById(R.id.checkBox2);
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     private void setButtonState() {
         boolean isGps = locationManager.isProviderEnabled("gps");
-        checkBox.setChecked(isGps);
+        //checkBox.setChecked(isGps);
     }
 
     @Override
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private void clickCheckBox() {
         Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
         startActivity(intent);
-        checkBox.setChecked(locationManager.isProviderEnabled("gps"));
+        //checkBox.setChecked(locationManager.isProviderEnabled("gps"));
     }
 
     private void updateText() {
