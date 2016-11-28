@@ -15,10 +15,14 @@ abstract class RECORDER extends AppCompatActivity {
     //as long as the service is running service_running=true data are written to db
     protected boolean service_running = true;
     protected long millisec_wait = 1000;
-    protected db appdatabse;
+    protected db_mtb appdatabse;
+    protected String track_id;
 
 
     protected void run_service() {
+        //every service start gets a uuid to identify the track
+        SessionIdentifierGenerator sig=new SessionIdentifierGenerator();
+        track_id=sig.nextSessionId();
         while (service_running) {
             Location loc = getGPS();
             write2db(loc);
@@ -33,8 +37,6 @@ abstract class RECORDER extends AppCompatActivity {
     protected abstract void write2db(Location loc);
 
     protected abstract Location getGPS();
-
-    protected abstract void credb();
 }
 
 public class recorder extends RECORDER {
@@ -44,7 +46,7 @@ public class recorder extends RECORDER {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recorder);
 
-        appdatabse = new db();
+        appdatabse = new db_mtb(this);
 
         run_service();
     }
@@ -64,7 +66,7 @@ public class recorder extends RECORDER {
 
     @Override
     protected void write2db(Location loc) {
-        appdatabse.writeloc(loc);
+        appdatabse.addlocation(loc,track_id);
     }
 
     @Override
@@ -75,10 +77,5 @@ public class recorder extends RECORDER {
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         location= locationManager.getLastKnownLocation("gps");
         return location;
-    }
-
-    @Override
-    protected void credb() {
-        throw new UnsupportedOperationException();
     }
 }
