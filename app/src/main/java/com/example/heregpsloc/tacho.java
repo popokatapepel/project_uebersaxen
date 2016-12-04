@@ -25,32 +25,26 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
     private RadioButton radio0;
     private RadioButton radio1;
     private Button checkBoxRefresh;
-    private Button ButtonRecord;
-    private int refreshCounter;
-    private TextView textCounter;
     private TextView textView;
 
     private LocationListener locationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
-            refreshCounter++;
-            textCounter.setText(Integer.toString(refreshCounter));
-        }
 
-        @Override
-        public void onProviderDisabled(String provider) {
-            refreshCounter = 0;
-            //textCounter.setText("0");
-        }
-
-        @Override
-        public void onProviderEnabled(String provider) {
-            refreshCounter = 0;
-            //textCounter.setText("0");
         }
 
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+
+        @Override
+        public void onProviderEnabled(String provider) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+
         }
     };
 
@@ -86,8 +80,6 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
         radio0 = (RadioButton) findViewById(R.id.radio0);
         radio1 = (RadioButton) findViewById(R.id.radio1);
         checkBoxRefresh = (Button) findViewById(R.id.checkBox2);
-        ButtonRecord=(Button) findViewById(R.id.button1);
-        //textCounter = (TextView) findViewById(R.id.textView2);
         textView = (TextView) findViewById(R.id.textView1);
 
         checkBox.setOnClickListener(this);
@@ -138,8 +130,6 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
     }
 
     private void clickCheckBoxRefresh() {
-        refreshCounter = 0;
-        textCounter.setText("0");
             String provider;
             if (radio0.isChecked())
                 provider = LocationManager.GPS_PROVIDER;
@@ -153,7 +143,6 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
     private void clickCheckBox() {
         Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
         startActivity(intent);
-        //checkBox.setChecked(locationManager.isProviderEnabled("gps"));
     }
 
     private void updateText() {
@@ -174,14 +163,7 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
             } else
                 textView.setText(R.string.network_disabled);
         } else {
-            long now = Calendar.getInstance().getTimeInMillis();
-            long secsAgo = (now - location.getTime()) / 1000;
-            if (secsAgo < 0) {
-                secsAgo = 0;
-            }
-            textView.setText(Html.fromHtml(getString(R.string.position_text,
-                    location.getLatitude(), location.getLongitude(),location.getAltitude(),location.getSpeed(),
-                    location.getAccuracy(), secsAgo)));
+            textView.setText(Html.fromHtml(getString(R.string.position_text, location.getAltitude(),location.getSpeed())));
 
         }
     }
