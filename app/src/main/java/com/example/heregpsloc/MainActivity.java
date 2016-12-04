@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         @Override
         public void onProviderDisabled(String provider) {
             refreshCounter = 0;
-            textCounter.setText("0");
+            //textCounter.setText("0");
         }
 
         @Override
         public void onProviderEnabled(String provider) {
             refreshCounter = 0;
-            textCounter.setText("0");
+            //textCounter.setText("0");
         }
 
         @Override

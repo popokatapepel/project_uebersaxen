@@ -11,7 +11,7 @@ import android.location.Location;
  */
 
 //class to handle all interactions with database
-//idea: http://mobilesiri.com/android-sqlite-database-tutorial-using-android-studio/
+//idea: http://mobilesiri.com/android-sqlite-database-tutorial-using-android-studi.o/
 public class db_mtb extends SQLiteOpenHelper  {
     SQLiteDatabase db;    // Database Version
     private static final int DATABASE_VERSION = 1;

@@ -61,7 +61,7 @@ public class recorder extends RECORDER {
     //eventhandler onclick start record
     public void startrecord(View view) {
         if (service_running){
-            Log.d("record_gps","Location is already beeig recorded")
+            Log.d("record_gps","Location is already beeig recorded");
         }
         else{
             service_running = true;
