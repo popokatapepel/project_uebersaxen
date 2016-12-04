@@ -15,7 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-abstract class RECORDER extends AppCompatActivity {
+abstract class RECORDER extends MenuAppCompatActivity {
     //as long as the service is running service_running=true data are written to db
     protected boolean service_running = true;
     protected long millisec_wait = 1000;
