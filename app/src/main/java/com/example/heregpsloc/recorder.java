@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -21,8 +22,8 @@ abstract class RECORDER extends AppCompatActivity {
 
     protected void run_service() {
         //every service start gets a uuid to identify the track
-        SessionIdentifierGenerator sig=new SessionIdentifierGenerator();
-        track_id=sig.nextSessionId();
+        SessionIdentifierGenerator sig = new SessionIdentifierGenerator();
+        track_id = sig.nextSessionId();
         while (service_running) {
             Location loc = getGPS();
             write2db(loc);
@@ -66,8 +67,18 @@ public class recorder extends RECORDER {
 
     @Override
     protected void write2db(Location loc) {
-        appdatabse.addlocation(loc,track_id);
+        appdatabse.addlocation(loc, track_id);
     }
+
+    LocationListener locationListener = new LocationListener() {
+        public void onLocationChanged(Location location) {}
+
+        public void onStatusChanged(String provider, int status, Bundle extras) {}
+
+        public void onProviderEnabled(String provider) {}
+
+        public void onProviderDisabled(String provider) {}
+    };
 
     @Override
     protected Location getGPS() {
@@ -75,6 +86,7 @@ public class recorder extends RECORDER {
         Location location;
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, locationListener);
         location= locationManager.getLastKnownLocation("gps");
         return location;
     }

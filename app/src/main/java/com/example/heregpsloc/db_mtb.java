@@ -13,7 +13,7 @@ import android.location.Location;
 //class to handle all interactions with database
 //idea: http://mobilesiri.com/android-sqlite-database-tutorial-using-android-studio/
 public class db_mtb extends SQLiteOpenHelper  {
-    // Database Version
+    SQLiteDatabase db;    // Database Version
     private static final int DATABASE_VERSION = 1;
     // Database Name
     private static final String DATABASE_NAME = "DB_MTB";
@@ -31,12 +31,13 @@ public class db_mtb extends SQLiteOpenHelper  {
 
     public db_mtb(Context context) {
         super(context,  DATABASE_NAME, null, DATABASE_VERSION);
+        db = getWritableDatabase();
     }
 
 
     // Adding new track_location
     public void addlocation(Location loc, String track_id) {
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("dou_long", loc.getLongitude());
         values.put("dou_lat", loc.getLatitude());
