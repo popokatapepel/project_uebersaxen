@@ -7,9 +7,12 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Looper;
+import android.os.StrictMode;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 abstract class RECORDER extends AppCompatActivity {
@@ -19,21 +22,23 @@ abstract class RECORDER extends AppCompatActivity {
     protected db_mtb appdatabse;
     protected String track_id;
 
-
-    protected void run_service() {
-        //every service start gets a uuid to identify the track
-        SessionIdentifierGenerator sig = new SessionIdentifierGenerator();
-        track_id = sig.nextSessionId();
-        while (service_running) {
-            Location loc = getGPS();
-            write2db(loc);
-            try {
-                Thread.sleep(millisec_wait);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+    Thread run_service = new Thread() {
+        public void run() {
+            //every service start gets a uuid to identify the track
+            SessionIdentifierGenerator sig = new SessionIdentifierGenerator();
+            track_id = sig.nextSessionId();
+            while (service_running) {
+                Location loc = getGPS();
+                write2db(loc);
+                try {
+                    Thread.sleep(millisec_wait);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
-    }
+    };
+
 
     protected abstract void write2db(Location loc);
 
@@ -48,15 +53,20 @@ public class recorder extends RECORDER {
         setContentView(R.layout.activity_recorder);
 
         appdatabse = new db_mtb(this);
-
-        run_service();
+        // start service in seperate thread in the background
+        run_service.start();
     }
 
 
     //eventhandler onclick start record
     public void startrecord(View view) {
-        service_running = true;
-        run_service();
+        if (service_running){
+            Log.d("record_gps","Location is already beeig recorded")
+        }
+        else{
+            service_running = true;
+            run_service.start();
+        }
     }
 
     //eventhandler onclick stop record
@@ -83,11 +93,18 @@ public class recorder extends RECORDER {
     @Override
     protected Location getGPS() {
         LocationManager locationManager;
-        Location location;
+        Location location=null;
 
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, locationListener);
-        location= locationManager.getLastKnownLocation("gps");
+        try{
+            locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, locationListener, Looper.getMainLooper());
+            location= locationManager.getLastKnownLocation("gps");
+
+        }
+        catch (Exception e)
+        {
+            Log.d("abcxxx",e.getMessage());
+        }
         return location;
     }
 }
