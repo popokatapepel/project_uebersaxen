@@ -1,7 +1,6 @@
 package com.example.heregpsloc;
 
 import java.util.Calendar;
-import java.util.jar.Manifest;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -17,11 +16,10 @@ import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
+public class tacho extends AppCompatActivity implements OnClickListener {
 
     private LocationManager locationManager;
     private Button checkBox;
@@ -105,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         public void run() {
             try {
                 while (true) {
-                    MainActivity.this.runOnUiThread(new Runnable() {
+                    tacho.this.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             updateText();

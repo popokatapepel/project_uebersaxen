@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menutest.MainActivity">
+    <item
+        android:id="@+id/tacho"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_tacho"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/recorder"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_record"
+        app:showAsAction="never" />
+</menu>
