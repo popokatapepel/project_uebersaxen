@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class tacho extends AppCompatActivity implements OnClickListener {
+public class tacho extends MenuAppCompatActivity implements OnClickListener {
 
     private LocationManager locationManager;
     private Button checkBox;
