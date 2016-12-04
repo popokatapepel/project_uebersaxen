@@ -21,4 +21,7 @@
     <string name="network">Network</string>
     <string name="read">Read</string>
     <string name="refresh">Refresh</string>
+    <string name="record">Start Recording</string>
+
+    <string name="stop">stop</string>
 </resources>
