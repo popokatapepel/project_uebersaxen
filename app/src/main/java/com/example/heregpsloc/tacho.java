@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -81,7 +80,7 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
     {
         //when gps-permission is granted this thread will start the app
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tacho);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         checkBox = (Button) findViewById(R.id.checkBox1);
         radio0 = (RadioButton) findViewById(R.id.radio0);
@@ -136,13 +135,6 @@ public class tacho extends MenuAppCompatActivity implements OnClickListener {
             clickCheckBoxRefresh();
         else
             setButtonState(); // for radio buttons
-    }
-
-    //eventhandler onclick start record
-    public void startrec(View view)
-    {
-        Intent intent = new Intent(this, recorder.class);
-        startActivity(intent);
     }
 
     private void clickCheckBoxRefresh() {

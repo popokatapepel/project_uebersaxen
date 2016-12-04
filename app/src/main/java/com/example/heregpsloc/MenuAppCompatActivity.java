@@ -1,5 +1,6 @@
 package com.example.heregpsloc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +21,7 @@ public class MenuAppCompatActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent=null;
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -28,15 +30,15 @@ public class MenuAppCompatActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         switch (id) {
             case R.id.tacho:
+                intent = new Intent(this, tacho.class);
                 break;
             case R.id.recorder:
+                intent = new Intent(this, recorder.class);
                 break;
             default:
                 throw new UnsupportedOperationException("There is no action defined for the Menu Item (ID: "+ id+")");
         }
-        if (id == R.id.tacho) {
-            return true;
-        }
+        startActivity(intent);
 
         return super.onOptionsItemSelected(item);
     }
