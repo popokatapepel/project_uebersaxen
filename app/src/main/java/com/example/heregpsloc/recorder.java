@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 abstract class RECORDER extends MenuAppCompatActivity {
     //as long as the service is running service_running=true data are written to db
@@ -39,6 +40,29 @@ abstract class RECORDER extends MenuAppCompatActivity {
         }
     };
 
+    Thread display_service_status = new Thread() {
+        public void run() {
+            //every service start gets a uuid to identify the track
+            while (true) {
+                try {
+                    runOnUiThread(new Runnable() {
+                        TextView textView = (TextView) findViewById(R.id.textView);
+                        @Override
+                        public void run() {
+                            if (service_running)
+                                textView.setText("Recording... TrackID_ " + track_id);
+                            else
+                                textView.setText("not recording");
+                        }
+                    });
+                    Thread.sleep(millisec_wait);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
+
 
     protected abstract void write2db(Location loc);
 
@@ -55,6 +79,7 @@ public class recorder extends RECORDER {
         appdatabse = new db_mtb(this);
         // start service in seperate thread in the background
         run_service.start();
+        display_service_status.start();
     }
 
 
