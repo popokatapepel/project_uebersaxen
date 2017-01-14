@@ -100,4 +100,25 @@ public class db_mtb extends SQLiteOpenHelper  {
         return returnstring;
     }
 
+    public track getdatafortrack(String trackname)
+    {
+        track trk=new track(trackname);
+        String selectQuery="select * from " +NAME_TBL_TRACK + " where str_track=" + trackname;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        String[] data = null;
+        if (cursor.moveToFirst()) {
+            do {
+                trk.setdatapoint(new datapoint(cursor.getDouble(cursor.getColumnIndex("dou_long")),
+                        cursor.getDouble(cursor.getColumnIndex("dou_lat")),
+                        cursor.getDouble(cursor.getColumnIndex("dou_alt")),
+                        cursor.getDouble(cursor.getColumnIndex("dou_vel")),
+                        cursor.getLong(cursor.getColumnIndex("lng_timemillis"))));
+            } while (cursor.moveToNext());
+        }
+        db.close();
+
+        return trk;
+    }
+
 }
