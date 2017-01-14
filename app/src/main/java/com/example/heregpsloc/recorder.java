@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 abstract class RECORDER extends MenuAppCompatActivity {
     //as long as the service is running service_running=true data are written to db
-    protected boolean service_running = true;
+    protected boolean service_running;
     protected long millisec_wait = 1000;
     protected db_mtb appdatabse;
     protected String track_id;
@@ -28,6 +28,7 @@ abstract class RECORDER extends MenuAppCompatActivity {
             //every service start gets a uuid to identify the track
             SessionIdentifierGenerator sig = new SessionIdentifierGenerator();
             track_id = sig.nextSessionId();
+            service_running=true;
             while (service_running) {
                 Location loc = getGPS();
                 write2db(loc);
@@ -78,7 +79,7 @@ public class recorder extends RECORDER {
 
         appdatabse = new db_mtb(this);
         // start service in seperate thread in the background
-        run_service.start();
+        //run_service.start();
         display_service_status.start();
     }
 
