@@ -2,6 +2,7 @@ package com.example.heregpsloc;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.location.Location;
@@ -61,4 +62,39 @@ public class db_mtb extends SQLiteOpenHelper  {
         // Creating tables again
         onCreate(db);
     }
+
+    public String getalldata()
+    {
+        String returnstring="";
+        String selectQuery="select * from " +NAME_TBL_TRACK;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        String[] data = null;
+        if (cursor.moveToFirst()) {
+            do {
+               returnstring= returnstring + " \n " + cursor.getString(cursor.getColumnIndex("str_track"));
+            } while (cursor.moveToNext());
+        }
+        db.close();
+
+        return returnstring;
+    }
+
+    public String getdistincttrackids()
+    {
+        String returnstring="";
+        String selectQuery="select distinct str_track from " +NAME_TBL_TRACK;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        String[] data = null;
+        if (cursor.moveToFirst()) {
+            do {
+                returnstring= returnstring + " \n " + cursor.getString(cursor.getColumnIndex("str_track"));
+            } while (cursor.moveToNext());
+        }
+        db.close();
+
+        return returnstring;
+    }
+
 }

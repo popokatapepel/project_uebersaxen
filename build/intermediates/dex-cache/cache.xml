@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_a0ed50b117efa25d3db862f2c69629fc918b0d56/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_538f98fe828ea63674336f1364dd9edae5348daf/classes.dex" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_fa1caa2b86a093272219244973192595204debc6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -43,17 +34,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="7281d9fb06cea7561cb198ab5939bee51d754f00">
+        sha1="b5df0ac39e61600233bacabc548a84775599fe47">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a58858ea6e075baa8151076c446cbb365256acac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_7c1515cf4d8aec074d53e51ef69b54c3ee439aee/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -63,6 +45,15 @@
         revision="25.0.1"
         sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_df1fedc8596493ae2e7cbbee070a36f37f32a37f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_6ab85e2c64c3240a026f536d4085e324f22a4f24/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -90,15 +81,6 @@
         revision="25.0.1"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_592fb24ef14da265600f9bd690b61a8b398cafb0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_08bc4448193dc8ff4069647837ad58cedaf37ee4/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,8 +115,44 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="00aa76e6c2e4f2dc2b7cd9563df5d3de8bb6feba">
+        sha1="ad7d46a617773728f55e056d4ea10166d45a949e">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b205e9b051549934f9fd641d5829ea8a2d56b730/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_a0ed50b117efa25d3db862f2c69629fc918b0d56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_538f98fe828ea63674336f1364dd9edae5348daf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_7c1515cf4d8aec074d53e51ef69b54c3ee439aee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_08bc4448193dc8ff4069647837ad58cedaf37ee4/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -144,6 +162,15 @@
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_7ed043568477d02d8677278b91a098c114f74241/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_7102026867241aa185767fcf224ca7cb3e3bfeab/classes.dex" />
     </item>
     <item
         is-multidex="true"
