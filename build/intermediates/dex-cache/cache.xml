@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="d69215d783535f005ba48b43825eb50744497361">
+        sha1="7281d9fb06cea7561cb198ab5939bee51d754f00">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a58858ea6e075baa8151076c446cbb365256acac/classes.dex" />
     </item>
     <item

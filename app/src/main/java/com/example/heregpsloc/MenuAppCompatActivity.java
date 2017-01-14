@@ -35,6 +35,9 @@ public class MenuAppCompatActivity extends AppCompatActivity {
             case R.id.recorder:
                 intent = new Intent(this, recorder.class);
                 break;
+            case R.id.ana:
+                intent = new Intent(this, analysis.class);
+                break;
             default:
                 throw new UnsupportedOperationException("There is no action defined for the Menu Item (ID: "+ id+")");
         }

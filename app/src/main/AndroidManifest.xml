@@ -15,14 +15,15 @@
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".recorder"
             android:launchMode="singleInstance" />
-        <activity android:name=".analysis"></activity>
+        <activity
+            android:name=".analysis"
+            android:launchMode="singleInstance" />
     </application>
 
 </manifest>
