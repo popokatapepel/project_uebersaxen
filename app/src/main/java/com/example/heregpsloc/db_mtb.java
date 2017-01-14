@@ -26,7 +26,8 @@ public class db_mtb extends SQLiteOpenHelper  {
             "\t`dou_lat`\tREAL NOT NULL,\n" +
             "\t`dou_alt`\tREAL NOT NULL,\n" +
             "\t`dou_vel`\tREAL NOT NULL,\n" +
-            "\t`str_track`\tTEXT NOT NULL\n" +
+            "\t`str_track`\tTEXT NOT NULL,\n" +
+            "\t`lng_timemillis`\t LONG NOT NULL\n" +
             ");";
 
 
@@ -45,6 +46,8 @@ public class db_mtb extends SQLiteOpenHelper  {
         values.put("dou_alt", loc.getAltitude());
         values.put("dou_vel", loc.getSpeed());
         values.put("str_track", track_id);
+        values.put("lng_timemillis", System.currentTimeMillis());
+
 
         db.insert(NAME_TBL_TRACK, null, values);
         db.close();

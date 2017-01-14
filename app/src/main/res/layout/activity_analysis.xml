@@ -22,7 +22,7 @@
         android:layout_marginTop="13dp"
         android:id="@+id/button"
         android:visibility="visible"
-        android:onClick="refresh" />
+        android:onClick="event_refresh" />
 
     <TextView
         android:text="TextView"

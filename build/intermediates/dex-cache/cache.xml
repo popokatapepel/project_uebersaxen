@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b5df0ac39e61600233bacabc548a84775599fe47">
+        sha1="2a4224df2660d07e3cc7c704a28d9b4d152534f1">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a58858ea6e075baa8151076c446cbb365256acac/classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="ad7d46a617773728f55e056d4ea10166d45a949e">
+        sha1="bb48bd73e88a12c608d8b4cd385d7e782c87a4e2">
         <dex dex="/home/janniklas/code/github/project_uebersaxen/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b205e9b051549934f9fd641d5829ea8a2d56b730/classes.dex" />
     </item>
     <item
