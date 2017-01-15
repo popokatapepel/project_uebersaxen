@@ -15,7 +15,7 @@ public class datapoint {
     Date datetime;
 
     //constructor setter
-    public datapoint(double _longitude, double _latitude, double _altitude, double _velocity, long _datetime){
+    public datapoint(double _latitude, double _longitude , double _altitude, double _velocity, long _datetime){
         longitude=_longitude;
         latitude=_latitude;
         altitude=_altitude;
