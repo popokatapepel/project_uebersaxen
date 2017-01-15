@@ -40,7 +40,7 @@ public class track {
         }
     });
     }
-    private void analyse_date(){
+    public void analyse_track(){
         initvars();
         sortdatapointsbytime();
         boolean init=true;
@@ -64,7 +64,6 @@ public class track {
          positive_climb=0;
          negative_climb=0;
     }
-
     private double calc_distance(datapoint dp1, datapoint dp2) {
         Location locationA = new Location("point A");
         locationA.setLatitude(dp1.latitude);
@@ -74,7 +73,6 @@ public class track {
         locationB.setLongitude(dp2.longitude);
         return locationA.distanceTo(locationB);
     }
-
     private double calc_climb(datapoint dp1, datapoint dp2){
         return dp2.altitude-dp1.altitude;
     }
